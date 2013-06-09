@@ -139,7 +139,7 @@
 		NSDrawThreePartImage(dstRect, leftEdge, center, rightEdge, NO, op, alpha, flipped);
 	} else {
 		// Vertical three-part image.
-		NSDrawThreePartImage(dstRect, (flipped ? bottomEdge : topEdge), center, (flipped ? topEdge : bottomEdge), YES, op, alpha, flipped);
+		NSDrawThreePartImage(dstRect, (flipped ? topEdge : bottomEdge), center, (flipped ? bottomEdge : topEdge), YES, op, alpha, flipped);
 	}
 }
 
