@@ -25,6 +25,8 @@
 		88347E6B16F213C500872A0A /* RBLHTMLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88347E6916F213C500872A0A /* RBLHTMLView.m */; };
 		88347E7316F2145900872A0A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88347E7216F2145900872A0A /* WebKit.framework */; };
 		884675FF16F2574200016B56 /* RBLHTMLViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 884675FE16F2574200016B56 /* RBLHTMLViewSpec.m */; };
+		96E3432D178EB28800B91030 /* NSTextField+RBLAntialiasingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 96E3432B178EB28800B91030 /* NSTextField+RBLAntialiasingAdditions.h */; };
+		96E3432E178EB28800B91030 /* NSTextField+RBLAntialiasingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 96E3432C178EB28800B91030 /* NSTextField+RBLAntialiasingAdditions.m */; };
 		AB10DB4D166EA9CA00AB7AB1 /* RBLScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = AB10DB4B166EA9CA00AB7AB1 /* RBLScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AB10DB4E166EA9CA00AB7AB1 /* RBLScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB10DB4C166EA9CA00AB7AB1 /* RBLScrollView.m */; };
 		AB10DB53166EADD000AB7AB1 /* RBLScrollViewSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = AB10DB52166EADD000AB7AB1 /* RBLScrollViewSpec.m */; };
@@ -175,6 +177,8 @@
 		88347E6916F213C500872A0A /* RBLHTMLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBLHTMLView.m; sourceTree = "<group>"; };
 		88347E7216F2145900872A0A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		884675FE16F2574200016B56 /* RBLHTMLViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBLHTMLViewSpec.m; sourceTree = "<group>"; };
+		96E3432B178EB28800B91030 /* NSTextField+RBLAntialiasingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTextField+RBLAntialiasingAdditions.h"; sourceTree = "<group>"; };
+		96E3432C178EB28800B91030 /* NSTextField+RBLAntialiasingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTextField+RBLAntialiasingAdditions.m"; sourceTree = "<group>"; };
 		AB10DB4B166EA9CA00AB7AB1 /* RBLScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RBLScrollView.h; sourceTree = "<group>"; };
 		AB10DB4C166EA9CA00AB7AB1 /* RBLScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBLScrollView.m; sourceTree = "<group>"; };
 		AB10DB52166EADD000AB7AB1 /* RBLScrollViewSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RBLScrollViewSpec.m; sourceTree = "<group>"; };
@@ -351,6 +355,8 @@
 				D011FD5D16239A8600A27946 /* NSImage+RBLResizableImageAdditions.m */,
 				D0410EA915C61895003A3203 /* NSTextView+RBLAntialiasingAdditions.h */,
 				D0410EAA15C61895003A3203 /* NSTextView+RBLAntialiasingAdditions.m */,
+				96E3432B178EB28800B91030 /* NSTextField+RBLAntialiasingAdditions.h */,
+				96E3432C178EB28800B91030 /* NSTextField+RBLAntialiasingAdditions.m */,
 				D04CBFC615F6D87B004A5BCC /* NSView+RBLAnimationAdditions.h */,
 				D04CBFC715F6D87B004A5BCC /* NSView+RBLAnimationAdditions.m */,
 				B85EE8E7163ECF4B00265870 /* NSView+RBLViewControllerAdditions.h */,
@@ -570,6 +576,7 @@
 				D088BEF916747D8F004B2665 /* NSFont+RBLFallbackAdditions.h in Headers */,
 				D03D67181677E13F0041DDF2 /* NSAttributedString+RBLHTMLAdditions.h in Headers */,
 				0396050A16E2DBA7007A5542 /* NSView+RBLAlignmentAdditions.h in Headers */,
+				96E3432D178EB28800B91030 /* NSTextField+RBLAntialiasingAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -775,6 +782,7 @@
 				0396050B16E2DBA7007A5542 /* NSView+RBLAlignmentAdditions.m in Sources */,
 				88347E6B16F213C500872A0A /* RBLHTMLView.m in Sources */,
 				30309E8E17228C1700BC2923 /* RBLTableView.m in Sources */,
+				96E3432E178EB28800B91030 /* NSTextField+RBLAntialiasingAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -857,6 +865,7 @@
 				GCC_PREFIX_HEADER = "Rebel/Rebel-Prefix.pch";
 				INFOPLIST_FILE = "Rebel/Rebel-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Profile;
@@ -912,6 +921,7 @@
 				GCC_PREFIX_HEADER = "Rebel/Rebel-Prefix.pch";
 				INFOPLIST_FILE = "Rebel/Rebel-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -926,6 +936,7 @@
 				GCC_PREFIX_HEADER = "Rebel/Rebel-Prefix.pch";
 				INFOPLIST_FILE = "Rebel/Rebel-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
